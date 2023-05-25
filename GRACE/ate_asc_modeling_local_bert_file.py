@@ -558,10 +558,10 @@ class PreTrainedBertModel(nn.Module):
                     archive.extractall(tempdir)
                 serialization_dir = tempdir
 
-            elif os.path.isfile('GeoAI_GRACE/GRACE/bert-base-uncased/bert-base-uncased.tar.gz'):
+            elif os.path.isfile('geoAI_GRACE/GRACE/bert-base-uncased/bert-base-uncased.tar.gz'):
             #christina: changed the source fo the archive file to the repo location of the downloaded bert-base-uncased tar.gz file
             #with tarfile.open(resolved_archive_file, 'r:gz') as archive:
-                with tarfile.open('GeoAI_GRACE/GRACE/bert-base-uncased/bert-base-uncased.tar.gz', 'r:gz') as archive:
+                with tarfile.open('geoAI_GRACE/GRACE/bert-base-uncased/bert-base-uncased.tar.gz', 'r:gz') as archive:
                     archive.extractall(tempdir)
                 serialization_dir = tempdir        
         # Load config
