@@ -1,3 +1,9 @@
 GRACE/bert-base-uncased/bert-base-uncased.tar.gz
 GRACE/trained_GRACE_emotion/pytorch_model.bin.9
 GRACE/trained_GRACE/pytorch_model.bin.9
+GRACE/__pycache__/ate_asc_features.cpython-310.pyc
+GRACE/__pycache__/ate_asc_modeling_local_bert_file.cpython-310.pyc
+GRACE/__pycache__/decoder_module.cpython-310.pyc
+GRACE/__pycache__/file_utils.cpython-310.pyc
+GRACE/__pycache__/utils.cpython-310.pyc
+GRACE/__pycache__/weighted_cross_entropy.cpython-310.pyc
