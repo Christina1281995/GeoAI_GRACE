@@ -487,7 +487,8 @@ class PreTrainedBertModel(nn.Module):
         if pretrained_model_name in PRETRAINED_MODEL_ARCHIVE_MAP:
             # if pretrained_model_name.find("spanbert-") > -1:
             #     CONFIG_NAME = 'config.json'
-            archive_file = PRETRAINED_MODEL_ARCHIVE_MAP[pretrained_model_name]       
+            archive_file = PRETRAINED_MODEL_ARCHIVE_MAP[pretrained_model_name] 
+            print(f"archive file: {archive_file}")      
         else:
             archive_file = pretrained_model_name
         # redirect to the cache, if necessary
@@ -518,6 +519,7 @@ class PreTrainedBertModel(nn.Module):
         
         if os.path.isdir(resolved_archive_file):
             serialization_dir = resolved_archive_file
+            print(f"serialization dir: {serialization_dir}")
         else:
             # Extract archive to temp dir
             tempdir = tempfile.mkdtemp()
